@@ -1,0 +1,6 @@
+@import url(../../src/colors.css);
+
+.logo {
+  color: var(--color-cornflower-blue);
+  margin-bottom: 20px;
+}
