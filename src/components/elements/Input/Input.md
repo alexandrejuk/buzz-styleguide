@@ -1,4 +1,4 @@
-# CurrencyInput
+# Input
 
 The `Input` component is used for monetary value input.
 

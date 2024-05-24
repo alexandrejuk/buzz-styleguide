@@ -6,12 +6,10 @@ The `CurrencyInput` component is used for monetary value input.
 
 ```jsx
   const [currencyState, setCurrencyState] = React.useState("");
-  <div>
-    <CurrencyInput
-      placeholder="R$ 0,00"
-      name="currencyInput"
-      value={currencyState}
-      onChange={(event) => setCurrencyState(event.target.value)}
-    />
-  </div>
+  <CurrencyInput
+    placeholder="R$ 0,00"
+    name="currencyInput"
+    value={currencyState}
+    onChange={(event) => setCurrencyState(event.target.value)}
+  />
 ```
