@@ -1,6 +1,6 @@
 # Card Component
 
-O componente `Card` é usado para exibir conteúdo em um cartão.
+The `Card` component is used to render cotents.
 
 ## Example Usage
 
@@ -8,8 +8,8 @@ O componente `Card` é usado para exibir conteúdo em um cartão.
 
 ```jsx
 <Card title="Card title">
-  <p>Conteúdo do Cartão</p>
-  <p>Conteúdo do Cartão</p>
-  <p>Conteúdo do Cartão</p>
+  <p>Card Content</p>
+  <p>Card Content</p>
+  <p>Card Content</p>
 </Card>
 ```
