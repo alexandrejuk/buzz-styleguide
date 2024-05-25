@@ -32,7 +32,7 @@ const DatePicker = ({
   const handleChangeRaw = (raw) => {
     const date = moment(pathOr('', ['currentTarget', 'value'], raw), momentFormatDate, true)
     if (date.isValid()) {
-      onChange({ target: { value: date.toISOString() }  })
+      onChange({ target: { value: date.toISOString(), name }  })
     }
   }
 
@@ -44,7 +44,7 @@ const DatePicker = ({
       customInput={<CustomInput inputRef={inputRef} />}
       dateFormat={momentFormatDate}
       onChangeRaw={(e) => handleChangeRaw(e)}
-      onChange={(value) => onChange({ target: { value: value && moment(value, momentFormatDate, true).toISOString() }})}
+      onChange={(value) => onChange({ target: { value: moment(value, momentFormatDate, true).toISOString(), name }})}
       locale="pt-BR"
       wrapperClassName={styles.datePickerWrapper}
       calendarClassName={styles.calendarCustom}
