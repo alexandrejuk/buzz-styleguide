@@ -1,0 +1,6 @@
+@import url(../../../colors.css);
+@import url(../../../typography.css);
+
+.datePickerWrapper {
+  width: 100%; 
+}

@@ -36,6 +36,7 @@ module.exports = {
         'src/components/elements/Icon/Bridge/**',
         'src/components/elements/Icon/Bulb/**',
         'src/components/elements/Icon/Call/**',
+        'src/components/elements/Icon/Calendar/**',
         'src/components/elements/Icon/Check/**',
         'src/components/elements/Icon/CirclePlus/**',
         'src/components/elements/Icon/Club/**',

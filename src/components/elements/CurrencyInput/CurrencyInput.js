@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './CurrencyInput.module.css';
+import styles from '../Input/Input.module.css';
 
 /**
  * CurrencyInput Component
