@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types'
 
 import Add from './Add'
 import ArrowGlyphDown from './ArrowGlyphDown'
@@ -8,6 +8,7 @@ import ArrowOutlineRight from './ArrowOutlineRight'
 import Award from './Award'
 import Bridge from './Bridge'
 import Bulb from './Bulb'
+import Calendar from './Calendar'
 import Call from './Call'
 import Check from './Check'
 import CirclePlus from './CirclePlus'
@@ -61,6 +62,7 @@ const Icon = ({
     award: Award,
     bridge: Bridge,
     bulb: Bulb,
+    calendar: Calendar,
     call: Call,
     check: Check,
     CirclePlus: CirclePlus,

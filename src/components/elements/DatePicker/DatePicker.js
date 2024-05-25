@@ -5,8 +5,10 @@ import moment from "moment"
 import { ptBR } from 'date-fns/locale'
 import 'react-datepicker/dist/react-datepicker.css'
 import styles from "./DatePicker.module.css"
+import { pathOr } from 'ramda'
 
 import Input from "../Input/Input"
+import Icon from "../Icon/Icon"
 
 registerLocale('pt-BR', ptBR)
 
@@ -28,9 +30,9 @@ const DatePicker = ({
   const inputRef = useRef(null)
 
   const handleChangeRaw = (raw) => {
-    const date = moment(raw.currentTarget.value, momentFormatDate, true)
+    const date = moment(pathOr('', ['currentTarget', 'value'], raw), momentFormatDate, true)
     if (date.isValid()) {
-      onChange({ event: { targert: { value: date.toISOString() } } })
+      onChange({ target: { value: date.toISOString() }  })
     }
   }
 
@@ -42,10 +44,11 @@ const DatePicker = ({
       customInput={<CustomInput inputRef={inputRef} />}
       dateFormat={momentFormatDate}
       onChangeRaw={(e) => handleChangeRaw(e)}
-      onChange={(value) => onChange({ event: { targert: { value }}})}
+      onChange={(value) => onChange({ target: { value: value && moment(value, momentFormatDate, true).toISOString() }})}
       locale="pt-BR"
       wrapperClassName={styles.datePickerWrapper}
       calendarClassName={styles.calendarCustom}
+      icon={<Icon name="calendar" heigth={16} width={16} />}
     />
   )
 }
