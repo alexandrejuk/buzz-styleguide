@@ -28,6 +28,7 @@ module.exports = {
       name: 'Elements',
       components: 'src/components/elements/**/*.js',
       ignore: [
+        'src/components/elements/Calendar/Calendar.js',
         'src/components/elements/Icon/Add/**',
         'src/components/elements/Icon/ArrowGlyphDown/**',
         'src/components/elements/Icon/ArrowOutlineLeft/**',
